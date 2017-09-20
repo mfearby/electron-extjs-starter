@@ -1,0 +1,21 @@
+{
+  "name": "electron-extjs-starter",
+  "version": "0.0.1",
+  "description": "Customised Electron project with Ext JS and electron-routes",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron . built",
+    "plain": "electron . plain",
+    "package": "electron-packager ./ starterapp --ignore=client$ --ignore=\\.ps1 --all --out ./dist --overwrite",
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "author": "Marc Fearby",
+  "license": "N/A",
+  "dependencies": {
+    "electron": "^1.7.6",
+    "electron-routes": "^1.3.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^9.0.1"
+  }
+}
