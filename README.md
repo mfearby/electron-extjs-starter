@@ -58,6 +58,29 @@ $ ./package.sh
 $ ./package
 ```
 
+## Detailed Steps to Create Project Structure
+If you don't want to clone this repository and end up with an Ext JS project called "StarterApp", follow these steps to create a similar project structure.
+```
+$ npm init
+$ npm install electron --save-exact --save-dev
+$ npm install electron-packager --save-dev
+$ npm install electron-routes --save
+$ sencha -sdk /path/to/ExtSDK generate app -classic MyApp ./client
+```
+Create the ``main.js`` file and copy the contents from the file in this repository.
+```
+$ cd client
+$ sencha app build -des ../client_built
+$ cd ..
+```
+
+Copy the scripts block from the ``package.json`` in this repository to your local version.
+
+```
+$ npm start
+$ npm run-script package
+```
+
 ## Author
 Marc Fearby
 - [marcfearby.com](http://marcfearby.com)
